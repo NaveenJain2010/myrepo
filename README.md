@@ -26,22 +26,23 @@ This project supports the installation of OpenStack Liberty release with MariaDB
 # How to configure the Project to install OpenStack
 
 The following steps will be required by end users to their workstations to configure/use this project:
+
 Step1: Setup the project on Physical/virtual machine with Ubuntu 14.04 LTS x86-64 operating system (this machine would trigger the installation of OpenStack liberty release over salt-minion(s)):
 
 1)	Install the latest version 2016.3.2 of salt-master.
 
-•	Run the following command to import the SaltStack repository key:
-  wget -O - https://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add –
+    •	Run the following command to import the SaltStack repository key:
+      wget -O - https://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add –
 
-•	Save the following line 
-  deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest trusty main
-  to /etc/apt/sources.list.d/saltstack.list
+    •	Save the following line 
+      deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest trusty main
+      to /etc/apt/sources.list.d/saltstack.list
 
-•	Run the following command:
-  sudo apt-get update
+    •	Run the following command:
+      sudo apt-get update
 
-•	Run the following command to install salt-master
-  sudo apt-get install salt-master
+    •	Run the following command to install salt-master
+      sudo apt-get install salt-master
 
 2)	Clone the project from git to local machine.
 
@@ -59,18 +60,18 @@ Setup three physical or virtual machines with Ubuntu 14.04 LTS x86-64 operating 
 
 1)	Install the latest version 2016.3.2 of salt-minion on all three nodes.
 
-•	Run the following command to import the SaltStack repository key:
-  wget -O - https://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add –
+    •	Run the following command to import the SaltStack repository key:
+      wget -O - https://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add –
 
-•	Save the following line 
-  deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest trusty main
-  to /etc/apt/sources.list.d/saltstack.list
+    •	Save the following line 
+      deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/latest trusty main
+      to /etc/apt/sources.list.d/saltstack.list
 
-•	Run the following command:
-  sudo apt-get update
+    •	Run the following command:
+      sudo apt-get update
 
-•	Run the following command to install salt-master
-  sudo apt-get install salt-minion
+    •	Run the following command to install salt-master
+      sudo apt-get install salt-minion
 
 2)	On every minion update the “/etc/hosts” file on every minion by adding the IP address of salt-master.
 
