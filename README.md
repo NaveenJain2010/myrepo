@@ -1,6 +1,6 @@
 ---
 Title: openstack-automation-saltstack
-Description: This project has been created by HCL Tech System Software team to support the installation automation of OpenStack using SaltStack.
+Description: This project is owned  by HCL Tech System Software team to support the automated installation of OpenStack using SaltStack.
 Contributor: HCL Tech System Software Team
 MailTo: hcl_ss_oss@hcl.com
 Tags: Automation of openstack, openstack automation using salt stack
