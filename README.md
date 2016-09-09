@@ -170,16 +170,106 @@ The following changes which are highlighted in below images would require to be 
 
 Following are the commonly faced problems along with the troubleshooting steps:
 
----
-Sl. No.: 1
-Troubleshooting problem : During the installation of states, sometimes a message comes from the salt-master saying "Minion did not return.".
-Resolution Steps: 1. This message occurs mainly due to the change in the IP address of salt-minion with respect to salt-master.
+Troubleshooting problem: 
+During the installation of states, sometimes a message comes from the salt-master saying "Minion did not return.".
+
+Resolution Steps: 
+1. This message occurs mainly due to the change in the IP address of salt-minion with respect to salt-master.
 
 2. To resolve this issue, we need to reconfigure IP address of the salt-minion, and update the host file.
 
 3. Execute the test.ping command from salt-master which results in true.
     salt 'controller.liberty' test.ping
 
-4. And then update the openstack_cluster_resources file with the new IP so that after the re run of the states, the minion automatically gets the updated IP entry in its host file.
+4. And then update the openstack_cluster_resources file with the new IP so that after the re run of the states, the minion 	automatically gets the updated IP entry in its host file.
+ 
+Troubleshooting problem: 
+When salt command starts execution from salt-master, sometimes a message saying "The Salt state.highstate command is already running at pid 9080" comes on command prompt.
 
----
+Resolution Steps: 
+1. This message occurs when a salt-minion is stopped by user by pressing Ctrl+C command to terminate it, and eventually it is still running.
+
+2. In that case when salt command is again executed from salt-master so this message comes and no states completion summary is displayed on salt-master.
+
+3 To avoid such a situation it is better to kill the salt-master and salt-minion demon by executing following command from salt-master and salt-minion.
+pkill salt-master(From salt-master node)
+pkill salt-minion(From salt-minion node)
+
+4. So again freshly start the salt-master and salt-minion demon in the debug mode, and wait for connection to be established.
+salt-master -l debug
+salt-minion -l debug 
+
+5. As the connection gets established, just execute the salt command by specifying the minion.
+salt '*.liberty' state.highstate
+
+Troubleshooting problem: 
+When salt-minion is showing infinite jobs sequence for a individual states and is acquiring more time to complete the process.
+
+Resolution Steps: 
+1. Terminate the salt-minion by Ctrl+C command.
+
+2. Check the individual states files, as if there is some logical error which causes salt-minion to start the infinite loop of jobs.
+
+3. After revalidating the states files for any logical errors, restart the salt-minion daemon.
+ salt-minion -l debug 
+
+4. And then start the execution of salt command from salt-master for a specific or all the minions.
+
+Troubleshooting problem: 
+When there is compile time error saying NoneType object is not iterate-able comes on salt-master node.
+
+Resolution Steps: 
+1. This problem occurs when there is no element in the dict to iterate.
+
+2. To resolve this error make sure, no sls is commented under a specific role in openstack_cluster_resources.sls file.
+
+3. Even if a user wants to run the individual state on individual minion, he needs to specify at least one state under each role.
+
+4. And can execute the salt-command by specifying that minion node.
+
+5. Let’s say he wants to install mariadb on controller node, then in cluster resources he needs to at least specify a individual sls under every node either it is compute or storage, but can execute the salt-command for a individual node.
+salt 'controller.liberty' state.highstate
+
+Troubleshooting problem: 
+If a user wants to install an individual package on an individual minion.
+
+Resolution Steps: 
+1. In such a case he needs to comment out all other states in the openstack _cluster_resources.sls file for that particular minion.
+
+2. And then execute the following command from the salt-master for a specific node.
+
+3. Let say for a controller node, apache module is needed.
+
+3.1 So firtsly comment out other sls (by putting # at the begining of line) in openstack _cluster_resources.sls file.
+
+3.2 And then execute the following command from salt-master.
+salt 'controller.liberty' state.highstate.
+
+Troubleshooting problem: 
+If a user wants to install all services on all nodes.
+
+Resolution Steps: 
+1. In that case user needs to remove all the commented lines form the openstack _cluster_resources.sls if there any.
+
+2. And execute the following command from salt-master.
+Salt '*.liberty' state.highstate
+
+3. As the command execution begins, he further cross validates the response of installation on all salt-minions node by visualizing the salt-minion daemon.
+
+4. All the states summary will be displayed on salt-master after the installation process is completed on each minion.
+
+## Version Information
+
+This project is tested on the following combination of versions:
+1. SaltStack Master version 2016.3.2
+2. SaltStack Minion version 2016.3.2
+3. OpenStack Liberty Release
+4. Ubuntu 14.04 LTS x86-64 operating system
+
+## Current Limitations
+
+For OpenStack Neutron Networking, this project supports only installation and configuration of Networking Option 2: Self-service networks. 
+
+##Future Plan
+
+We are in planning phase to provide the automation for installation of OpenStack Mitaka release and installation and configuration of Object Storage (Swift module).
