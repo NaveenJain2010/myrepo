@@ -112,11 +112,11 @@ Step6: Every minion should be registered on salt-master machine, in order to reg
     
 Step7: Updated the file “data_root/openstack_cluster.sls” located in salt-master machine. The fields which are highlighted in the below image should be provided by the user:
 
-![Image1](https://github.com/NaveenJain2010/myrepo/raw/master/img/Image1.png)
+![Image1](https://github.com/NaveenJain2010/myrepo/raw/master/img/image1.png)
 
 Step8: Verify the following values should be in-sync as specified in the below image:
 
-![Image2](https://github.com/NaveenJain2010/myrepo/raw/master/img/Image2.png)
+![Image2](https://github.com/NaveenJain2010/myrepo/raw/master/img/image2.png)
 
 ## How to start execution to install OpenStack in three node architecture
 
@@ -162,9 +162,9 @@ In case if there is requirement to install and configure more than one instance 
 
 The following changes which are highlighted in below images would require to be made in the respective files.
 
-![Image3](https://github.com/NaveenJain2010/myrepo/raw/master/img/Image3.png)
+![Image3](https://github.com/NaveenJain2010/myrepo/raw/master/img/image3.png)
 
-![Image4](https://github.com/NaveenJain2010/myrepo/raw/master/img/Image4.png)
+![Image4](https://github.com/NaveenJain2010/myrepo/raw/master/img/image4.png)
 
 ## Troubleshooting Steps
 
