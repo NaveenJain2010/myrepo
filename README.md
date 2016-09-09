@@ -95,3 +95,19 @@ Step4: Update the name of all three minions by executing the following commands:
 
     5)	Reboot all three minions.
 
+# Please note:
+The above mentioned names could be anything as per the user(s) choice, as we have considered the above mentioned name to easily visualize/identify the OpenStack nodes.
+
+Step5: In order to start salt-minion, execute the following command in terminal on each salt-minion machine (OpenStack nodes):
+salt-minion –l debug
+
+Step6: Every minion should be registered on salt-master machine, in order to register the minion execute the following command on salt-master:
+
+    salt-key –a “controller.liberty”
+    salt-key –a “compute.liberty”
+    salt-key –a “blockstorage.liberty”
+
+    In order to verify the status of minion registration with master, execute the following command
+    salt ‘*.liberty’ test.ping (which displays all 3 salt-minions will be shown in green color.)
+    
+Step7: Updated the file “data_root/openstack_cluster.sls” located in salt-master machine. The fields which are highlighted in the below image should be provided by the user:
