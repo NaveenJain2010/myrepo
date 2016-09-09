@@ -111,3 +111,75 @@ Step6: Every minion should be registered on salt-master machine, in order to reg
     salt ‘*.liberty’ test.ping (which displays all 3 salt-minions will be shown in green color.)
     
 Step7: Updated the file “data_root/openstack_cluster.sls” located in salt-master machine. The fields which are highlighted in the below image should be provided by the user:
+
+### <Image to be added>
+
+Step8: Verify the following values should be in-sync as specified in the below image:
+
+### <Image to be added>
+
+## How to start execution to install OpenStack in three node architecture
+
+We are done with setting of salt-master and salt-minion machines, now this time to start the execution of OpenStack installation. 
+
+In order to start the installation, execute the following command from terminal on salt-master machine:
+	salt ‘*.liberty’ state.highstate
+	
+The following OpenStack components would be installed on respective minions:
+
+### On Controller node (in our case that is represented as controller.liberty with IP address 192.168.174.234)
+
+    1)	Installation and configuration of MariaDB server
+    2)	Installation and configuration of RabbitMQ server
+    3)	Installation and configuration of Apache server
+    4)	Installation and configuration of Memcached
+    5)	Installation and configuration of identity service (i.e. Keystone)
+    6)	Installation and configuration of image  service (i.e. Glance)
+    7)	Installation and configuration of compute service (i.e. Nova)
+    8)	Installation and configuration of networking service (i.e. Neutron)
+    9)	Installation and configuration of dashboard service (i.e. Horizon)
+    10)	Installation and configuration of block storage service (i.e. Cinder)
+### On Compute node (in our case that is represented as compute.liberty with IP address 192.168.253.129)
+
+    1)	Installation and configuration of compute service (i.e. Nova)
+    2)	Installation and configuration of networking service (i.e. Neutron)
+
+### On Block storage node (in our case that is represented as blockstorage.liberty with IP address 192.168.253.131)
+
+    1)	Installation and configuration of block storage service (i.e. Cinder)
+
+In common the following setting/installation would be performed over all the three OpenStack nodes:
+
+    1)	Update the host file.
+    2)	Network interface related changes in interfaces file.
+
+## Changes if Installation needed to setup more than one instance of OpenStack environment
+
+In case if there is requirement to install and configure more than one instance of OpenStack like:
+
+    Instance1: Controller node, Compute node and Block Storage node
+    Instance2: Controller node, Compute node and Block Storage node
+
+The following changes which are highlighted in below images would require to be made in the respective files.
+
+### <Image to be added>
+
+### <Image to be added>
+
+## Troubleshooting Steps
+
+Following are the commonly faced problems along with the troubleshooting steps:
+
+---
+Sl. No.: 1
+Troubleshooting problem : During the installation of states, sometimes a message comes from the salt-master saying "Minion did not return.".
+Resolution Steps: 1. This message occurs mainly due to the change in the IP address of salt-minion with respect to salt-master.
+
+2. To resolve this issue, we need to reconfigure IP address of the salt-minion, and update the host file.
+
+3. Execute the test.ping command from salt-master which results in true.
+    salt 'controller.liberty' test.ping
+
+4. And then update the openstack_cluster_resources file with the new IP so that after the re run of the states, the minion automatically gets the updated IP entry in its host file.
+
+---
