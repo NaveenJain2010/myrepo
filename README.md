@@ -11,4 +11,6 @@ Modified: 2016 Sep 09
 openstack-automation-saltstack
 =========
 
-## This project has been created by HCL Tech System Software team to support the installation automation of OpenStack using SaltStack.
+This project has been created by HCL Tech System Software team to support the installation automation of OpenStack using SaltStack.
+
+
