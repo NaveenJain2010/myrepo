@@ -261,6 +261,7 @@ Salt '*.liberty' state.highstate
 ## Version Information
 
 This project is tested on the following combination of versions:
+
 1. SaltStack Master version 2016.3.2
 2. SaltStack Minion version 2016.3.2
 3. OpenStack Liberty Release
