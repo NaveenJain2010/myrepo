@@ -119,6 +119,10 @@ Step8: Verify the following values should be in-sync as specified in the below i
 
 ![Image2](https://github.com/NaveenJain2010/myrepo/raw/master/img/image2.png)
 
+Step9: The following file as displayed in below image contains the value for the parameters which would be specified while executing the commands for every service to create users, services and endpoints etc. Before proceeding to the installation please review and update the values as per your preferences:
+
+![Image3](https://github.com/NaveenJain2010/myrepo/raw/master/img/image3.png)
+
 ## How to start execution to install OpenStack in three node architecture
 
 We are done with setting of salt-master and salt-minion machines, now this time to start the execution of OpenStack installation. 
@@ -163,9 +167,9 @@ In case if there is requirement to install and configure more than one instance 
 
 The following changes which are highlighted in below images would require to be made in the respective files.
 
-![Image3](https://github.com/NaveenJain2010/myrepo/raw/master/img/image3.png)
-
 ![Image4](https://github.com/NaveenJain2010/myrepo/raw/master/img/image4.png)
+
+![Image5](https://github.com/NaveenJain2010/myrepo/raw/master/img/image5.png)
 
 ## Troubleshooting Steps
 
