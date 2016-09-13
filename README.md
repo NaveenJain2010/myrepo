@@ -170,8 +170,8 @@ The following changes which are highlighted in below images would require to be 
 
 Following are the commonly faced problems along with the troubleshooting steps:
 
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=679
- style='width:509.0pt;margin-left:-.55in;border-collapse:collapse;mso-yfti-tbllook:
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=768
+ style='width:8.0in;margin-left:-.8in;border-collapse:collapse;mso-yfti-tbllook:
  1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>
   <td width=51 nowrap valign=bottom style='width:38.0pt;border:solid windowtext 1.0pt;
@@ -182,7 +182,7 @@ Following are the commonly faced problems along with the troubleshooting steps:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>SI. No.<o:p></o:p></span></b></p>
   </td>
-  <td width=296 nowrap valign=bottom style='width:222.0pt;border:solid windowtext 1.0pt;
+  <td width=207 nowrap valign=bottom style='width:155.5pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
   #D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
@@ -191,7 +191,7 @@ Following are the commonly faced problems along with the troubleshooting steps:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>Troubleshooting problems <o:p></o:p></span></b></p>
   </td>
-  <td width=332 nowrap valign=bottom style='width:249.0pt;border:solid windowtext 1.0pt;
+  <td width=510 nowrap valign=bottom style='width:382.5pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
   #D9D9D9;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
@@ -201,30 +201,30 @@ Following are the commonly faced problems along with the troubleshooting steps:
   color:black'>Resolution Steps<o:p></o:p></span></b></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:1;height:168.25pt'>
+ <tr style='mso-yfti-irow:1;height:128.65pt'>
   <td width=51 valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:168.25pt'>
+  0in 5.4pt 0in 5.4pt;height:128.65pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>1<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:168.25pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:128.65pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>During the installation of states, sometimes a message comes
   from the salt-master saying &quot;Minion did not return.&quot;<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:168.25pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:128.65pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
@@ -234,27 +234,28 @@ Following are the commonly faced problems along with the troubleshooting steps:
   salt-minion, and update the host file.<br>
   3. Execute the <span class=SpellE>test.ping</span> command from salt-master
   which results in true.<br>
-  <span class=GramE><i>salt</i></span><i> '<span class=SpellE>controller.liberty</span>'
-  <span class=SpellE>test.ping</span></i><br>
+  <span class=GramE><b style='mso-bidi-font-weight:normal'><i>salt</i></b></span><b
+  style='mso-bidi-font-weight:normal'><i> '<span class=SpellE>controller.liberty</span>'
+  <span class=SpellE>test.ping</span></i></b><br>
   4. And then update the <span class=SpellE>openstack_cluster_resources</span>
   file with the new IP so that after the re run of the states, the minion
   automatically gets the updated IP entry in its host file.<o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:2;height:292.0pt'>
+ <tr style='mso-yfti-irow:2;height:211.0pt'>
   <td width=51 nowrap valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:292.0pt'>
+  0in 5.4pt 0in 5.4pt;height:211.0pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>2<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:292.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:211.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
@@ -263,58 +264,63 @@ Following are the commonly faced problems along with the troubleshooting steps:
   command is already running at <span class=SpellE>pid</span> 9080&quot; comes
   on command prompt.<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:292.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:211.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>1. This message occurs when a salt-minion is stopped by user by
   pressing <span class=SpellE>Ctrl+C</span> command to terminate it, and
   eventually it is still running.<br>
-  2. In that case when salt command is again executed from salt-master so this
-  message comes and no states completion summary is displayed on salt-master.<br>
+  2. In that case when salt commands are re-executed from salt-master so this
+  message comes and no states completion summary has been displayed on
+  salt-master.<br>
   3 To avoid such a situation it is better to kill the salt-master and
-  salt-minion demon by executing following command from salt-master and
+  salt-minion daemon by executing following command on salt-master and
   salt-minion.<br>
-  <span class=SpellE><span class=GramE><i>pkill</i></span></span><i>
-  salt-master(From salt-master node)</i><br>
-  <span class=SpellE><i>pkill</i></span><i> salt-minion(From salt-minion node)</i><br>
-  4. So again freshly start the salt-master and salt-minion demon in the debug
-  mode, and wait for connection to be established.<br>
-  <span class=GramE><i>salt-master</i></span><i> -l debug</i><br>
-  <i>salt-minion -l debug <br>
+  <span class=SpellE><span class=GramE><b style='mso-bidi-font-weight:normal'><i>pkill</i></b></span></span><b
+  style='mso-bidi-font-weight:normal'><i> salt-master</i></b><i>(From
+  salt-master node)</i><br>
+  <span class=SpellE><b style='mso-bidi-font-weight:normal'><i>pkill</i></b></span><b
+  style='mso-bidi-font-weight:normal'><i> salt-minion</i></b><i>(From
+  salt-minion node)</i><br>
+  4. Restart the salt-master and salt-minion daemon in the debug mode, and wait
+  for connection to be established.<br>
+  <span class=GramE><b style='mso-bidi-font-weight:normal'><i>salt-master</i></b></span><b
+  style='mso-bidi-font-weight:normal'><i> -l debug</i><br>
+  <i>salt-minion -l debug</i></b><i> <br>
   5. </i>As the connection gets established, just execute the salt command by specifying
   the minion.<br>
-  <i>salt '*.liberty' <span class=SpellE>state.highstate</span></i><o:p></o:p></span></p>
+  <b style='mso-bidi-font-weight:normal'><i>salt '*.liberty' <span
+  class=SpellE>state.highstate</span></i></b><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:3;height:135.0pt'>
+ <tr style='mso-yfti-irow:3;height:108.4pt'>
   <td width=51 nowrap valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:135.0pt'>
+  0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>3<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:135.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
-  color:black'>When salt-minion is showing infinite jobs sequence for <span
-  class=SpellE><span class=GramE>a</span></span> individual states and is
-  acquiring more time to complete the process.<o:p></o:p></span></p>
+  color:black'>When salt-minion is showing infinite jobs sequence for an
+  individual states and is acquiring more time to complete the process.<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:135.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
@@ -324,26 +330,27 @@ Following are the commonly faced problems along with the troubleshooting steps:
   causes salt-minion to start the infinite loop of jobs.<br>
   3. After revalidating the states files for any logical errors, restart the
   salt-minion daemon.<br>
-  <i><span style='mso-spacerun:yes'> </span><span class=GramE>salt-minion</span>
-  -l debug <br>
-  </i>4. And then start the execution of salt command from salt-master for a
-  specific or all the minions.<o:p></o:p></span></p>
+  <i><span style='mso-spacerun:yes'> </span><span class=GramE><b
+  style='mso-bidi-font-weight:normal'>salt-minion</b></span><b
+  style='mso-bidi-font-weight:normal'> -l debug</b> <br>
+  </i>4. And then start the execution of salt command from salt-master for a particular
+  or for all the minions.<o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:4;height:220.0pt'>
+ <tr style='mso-yfti-irow:4;height:142.6pt'>
   <td width=51 nowrap valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:220.0pt'>
+  0in 5.4pt 0in 5.4pt;height:142.6pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>4<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:220.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:142.6pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
@@ -351,10 +358,10 @@ Following are the commonly faced problems along with the troubleshooting steps:
   <span class=SpellE>NoneType</span> object is not iterate-able comes on
   salt-master node.<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:220.0pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:142.6pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
@@ -363,94 +370,100 @@ Following are the commonly faced problems along with the troubleshooting steps:
   2. To resolve this error make sure, no <span class=SpellE>sls</span> is
   commented under a specific role in <span class=SpellE>openstack_cluster_resources.sls</span>
   file.<br>
-  3. Even if a user wants to run the individual state on individual minion, he
+  3. Even if a user wants to run the individual state on individual minion, he/she
   needs to specify at least one state under each role.<br>
   4. And can execute the salt-command by specifying that minion node.<br>
-  5. Let’s say he wants to install <span class=SpellE>mariadb</span> on
-  controller node, then in cluster resources he needs to at least specify <span
-  class=SpellE><span class=GramE>a</span></span> individual <span class=SpellE>sls</span>
-  under every node either it is compute or storage, but can execute the
-  salt-command for <span class=SpellE>a</span> individual node.<i><br>
-  salt '<span class=SpellE>controller.liberty</span>' <span class=SpellE>state.highstate</span></i><o:p></o:p></span></p>
+  5. Let’s say he/she wants to install <span class=SpellE>MariaDB</span> on
+  controller node, then in cluster resources he needs to at least specify an
+  individual <span class=SpellE>sls</span> under every node either it is
+  compute or storage, but can execute the salt-command for an individual node.<i><br>
+  <b style='mso-bidi-font-weight:normal'>salt '<span class=SpellE>controller.liberty</span>'
+  <span class=SpellE>state.highstate</span></b></i><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:5;height:166.9pt'>
+ <tr style='mso-yfti-irow:5;height:108.4pt'>
   <td width=51 nowrap valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:166.9pt'>
+  0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>5<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:166.9pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>If a user wants to install an individual package on an
   individual minion.<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:166.9pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:108.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
-  color:black'>1. In such a case he needs to comment out all other states in
-  the <span class=SpellE>openstack</span> _<span class=SpellE>cluster_resources.sls</span>
+  color:black'>1. In such a case he/she needs to comment out all other states
+  in the <span class=SpellE>openstack</span> _<span class=SpellE>cluster_resources.sls</span>
   file for that particular minion.<br>
   2. And then execute the following command from the salt-master for a specific
   node.<br>
   3. Let say for a controller node, apache module is needed.<br>
-  3.1 So <span class=SpellE>firtsly</span> comment out other <span
-  class=SpellE>sls</span> in <span class=SpellE>openstack</span> _<span
-  class=SpellE>cluster_resources.sls</span> file.<br>
-  3.2 And then execute the following command from salt-master.<br>
-  <span class=GramE>salt</span> '<span class=SpellE>controller.liberty</span>' <span
-  class=SpellE>state.highstate</span>.<o:p></o:p></span></p>
+  3.1. So he/she should comment out other <span class=SpellE>sls</span> in <span
+  class=SpellE>openstack</span> _<span class=SpellE>cluster_resources.sls</span>
+  file.<br>
+  3.2. And then execute the following command from salt-master.<br>
+  <span class=GramE><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+  normal'>salt</i></b></span><b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'> '<span class=SpellE>controller.liberty</span>'
+  <span class=SpellE>state.highstate</span>.</i></b><o:p></o:p></span></p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:165.1pt'>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes;height:112.0pt'>
   <td width=51 nowrap valign=top style='width:38.0pt;border:solid windowtext 1.0pt;
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
-  0in 5.4pt 0in 5.4pt;height:165.1pt'>
+  0in 5.4pt 0in 5.4pt;height:112.0pt'>
   <p class=MsoNormal align=right style='margin-bottom:0in;margin-bottom:.0001pt;
   text-align:right;line-height:normal'><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:"Times New Roman";color:black'>6<o:p></o:p></span></p>
   </td>
-  <td width=296 valign=top style='width:222.0pt;border-top:none;border-left:
+  <td width=207 valign=top style='width:155.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:165.1pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:112.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
   color:black'>If a user wants to install all services on all nodes.<o:p></o:p></span></p>
   </td>
-  <td width=332 valign=top style='width:249.0pt;border-top:none;border-left:
+  <td width=510 valign=top style='width:382.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
-  padding:0in 5.4pt 0in 5.4pt;height:165.1pt'>
+  padding:0in 5.4pt 0in 5.4pt;height:112.0pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
-  color:black'>1. In that case user needs to remove all the commented lines
-  form the <span class=SpellE>openstack</span> _<span class=SpellE>cluster_resources.sls</span>
-  if there any.<br>
+  color:black'>1. In that case user needs to remove all the commented lines (i.e.
+  a # sign in the beginning of line) form the <span class=SpellE>openstack</span>
+  _<span class=SpellE>cluster_resources.sls</span> if there is any.<br>
   2. And execute the following command from salt-master.<br>
-  Salt '*.liberty' <span class=SpellE>state.highstate</span><br>
-  3. As the command execution begins, he further cross validates the response
-  of installation on all salt-minions node by visualizing the salt-minion
-  daemon.<br>
+  </span><span class=GramE><b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>salt</i></b></span><b style='mso-bidi-font-weight:
+  normal'><i style='mso-bidi-font-style:normal'> '*.liberty' <span
+  class=SpellE>state.highstate</span></i></b><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:"Times New Roman";color:black'><br>
+  3. As the command execution begins, he/she further cross validates the
+  responses of installation on all salt-minions node by seeing the salt-minion daemon.<br>
   4. All the states summary will be displayed on salt-master after the
-  installation process is completed on each minion.<o:p></o:p></span></p>
+  installation process has been completed on each minion.<o:p></o:p></span></p>
   </td>
  </tr>
 </table>
