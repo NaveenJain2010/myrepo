@@ -470,12 +470,11 @@ Following are the commonly faced problems along with the troubleshooting steps:
 
 ## Version Information
 
-This project is tested on the following combination of versions:
+This project is based and tested on the following versions:
 
-1. SaltStack Master version 2016.3.2
-2. SaltStack Minion version 2016.3.2
-3. OpenStack Liberty Release
-4. Ubuntu 14.04 LTS x86-64 operating system
+1. SaltStack Master and Minion version 2016.3.2
+2. OpenStack Liberty Release
+3. Ubuntu 14.04 LTS x86-64 operating system
 
 ## Current Limitations
 
