@@ -180,7 +180,7 @@ Following are the commonly faced problems along with the troubleshooting steps:
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><b><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
-  color:black'>SI. No.<o:p></o:p></span></b></p>
+  color:black'>Sl. No.<o:p></o:p></span></b></p>
   </td>
   <td width=207 nowrap valign=bottom style='width:155.5pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
