@@ -7,7 +7,6 @@ Mail To: hcl_ss_oss@hcl.com
 Tags: Automation of OpenStack, OpenStack automation using saltstack, HCL in OpenStack automation, Installation support for OpenStack
 Created:  2016 Sep 09
 Modified: 2016 Sep 09
-
 ---
 
 openstack-automation-saltstack
