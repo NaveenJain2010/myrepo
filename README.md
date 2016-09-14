@@ -1,7 +1,3 @@
-<head>
-<meta name="keywords" content="Automation of OpenStack, penStack automation using saltstack, penStack automation, Installation support for OpenStack" />
-</head>
-
 ---
 Title: openstack-automation-saltstack
 Description: This project is owned  by HCL Tech System Software team to support the automated installation of OpenStack using SaltStack.
