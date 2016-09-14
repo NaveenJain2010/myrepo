@@ -1,8 +1,3 @@
-<html>
-<head>
-<meta name="keywords" content="Automation of OpenStack, penStack automation using saltstack, penStack automation, Installation support for OpenStack" />
-</head>
-</html>
 ---
 Title: openstack-automation-saltstack
 Description: This project is owned  by HCL Tech System Software team to support the automated installation of OpenStack using SaltStack.
@@ -492,3 +487,7 @@ For OpenStack Neutron Networking, this project supports only installation and co
 ##Future Plan
 
 We are in planning phase to provide the automation for installation of OpenStack Mitaka release and installation and configuration of Object Storage (Swift module).
+
+<head>
+<meta name="keywords" content="Automation of OpenStack, penStack automation using saltstack, penStack automation, Installation support for OpenStack" />
+</head>
