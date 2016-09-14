@@ -4,7 +4,7 @@ Description: This project is owned  by HCL Tech System Software team to support 
 Owner of the Project: HCL Tech System Software Team
 Contributor: HCL Tech System Software Team
 Mail To: hcl_ss_oss@hcl.com
-Tags: Automation of openstack, openstack automation using salt stack
+Tags: Automation of openstack, openstack automation using salt stack, HCL in OpenStack automation, Installation support for openstack
 Created:  2016 Sep 09
 Modified: 2016 Sep 09
 
