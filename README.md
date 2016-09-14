@@ -126,9 +126,10 @@ Step9: The following file as displayed in below image contains the value for the
 
 We are done with setting of salt-master and salt-minion machines, now this time to start the execution of OpenStack installation. 
 
-In order to start the installation, execute the following command from terminal on salt-master machine:
-	salt ‘*.liberty’ state.highstate
-	
+#### In order to start the installation, execute the following command from terminal on salt-master machine:
+
+		salt ‘*.liberty’ state.highstate
+		
 The following OpenStack components would be installed on respective minions:
 
 ### On Controller node (in our case that is represented as controller.liberty with IP address 192.168.174.234)
