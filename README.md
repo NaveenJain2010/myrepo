@@ -1,3 +1,11 @@
+<Head>
+	<meta name='keywords' content='your, tags'>
+	<meta name='description' content='150 words'>
+	<meta name='subject' content='Test'>
+	<meta name='copyright' content='NaveenJain company'>
+	<meta name='robots' content='index,follow'>
+	<meta name='revised' content='October 05, 2016'>
+</Head>
 ---
 Title: openstack-automation-saltstack
 Description: This project is owned  by HCL Tech System Software team to support the automated installation of OpenStack using SaltStack.
